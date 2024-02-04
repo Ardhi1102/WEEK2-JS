@@ -1,11 +1,11 @@
 const readline = require('readline');
 
-const question1 = readline.createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-question1.question('Masukkan bilangan genap: ', (input) => {
+rl.question('Masukkan bilangan genap: ', (input) => {
   const x = parseFloat(input);
 
   if (isNaN(x) || x < 0) {
